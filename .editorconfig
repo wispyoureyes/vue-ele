@@ -1,0 +1,9 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space   # 缩进风格
+indent_size = 2   # 缩进量
+end_of_line = lf   # 换行符风格，lf表示linux 与mac的的换行符风格
+insert_final_newline = true    # 创建文件时自动在行位插入新行
+trim_trailing_whitespace = true # 自动移除行位空格
