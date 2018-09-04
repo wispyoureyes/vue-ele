@@ -8,12 +8,6 @@
 export default{};
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
-body
-  background:red
+<style lang="scss" rel="stylesheet/stylus">
 
-#app
-  .tab
-    display:flex
-    width:100%
 </style>
