@@ -2,14 +2,17 @@
   <div id="app">
     <v-header></v-header>
      <div class="tab">
-        <div class="tab-item">商品</div>
-        <div class="tab-item">评论</div>
-        <div class="tab-item">商家</div>
+        <div class="tab-item">
+          <router-link to="/goods">商品</router-link>
+        </div>
+        <div class="tab-item">
+          <router-link to="/ratings">评论</router-link>
+        </div>
+        <div class="tab-item">
+          <router-link to="/seller">商家</router-link>
+        </div>
      </div>
-     <div class="content">
-       i am content
-     </div>
-     <embed id="pdfPlayer" src="抱朴二号私募证券投资基金20180801-20180831.pdf" type="application/pdf" width="100%" height="100%" >
+     <router-view/>
   </div>
 </template>
 
@@ -24,11 +27,28 @@ export default{
 
 <style lang="scss" type="text/css" rel="stylesheet/scss">
   body{
-    background:red;
     #app{
       .tab{
-        display:flex;
-        width:100%;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(7,17,27,0.1);
+        // pc端dpi ,物理像素是设备像素的两倍
+        .tab-item{
+          flex: 1;
+          text-align: center;
+          & > a{
+            display: block;
+            font-size: 14px;
+            color: #778593;
+            // css规范
+            // 布局（触发重排） - 宽高，文字结构（不可继承的，触发重绘或重排） - 字体、颜色（可继承，重绘但不影响重排）
+            &.active{
+              color: rgb(240, 20, 20)
+            }
+          }
+        }
       }
     }
   }

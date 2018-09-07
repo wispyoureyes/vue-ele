@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    我是header
+  <div class="">
+    I am goods
   </div>
 </template>
 
@@ -9,11 +9,12 @@ export default {
   name: '',
   data () {
     return {
+
     };
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="" scoped>
 
 </style>

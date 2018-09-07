@@ -3,21 +3,17 @@
 import Vue from 'vue';
 import App from './App';
 import axios from 'axios';
+import router from './router';
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
 
-// 忽略掉eslint对vue实例化后必须要赋值给一个对象的规则
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   components: { App },
-  template: '<App/>',
-  created () {
-    this.$http.get('/api/seller').then(response => {
-      console.log(response);
-    }).catch(response => {
-      console.log(response);
-    });
-  }
+  template: '<App/>'
 });
+
+router.push('/goods');

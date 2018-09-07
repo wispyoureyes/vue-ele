@@ -1,19 +1,20 @@
 <template>
-  <div class="header">
-    我是header
+  <div class="seller">
+    i am seller
   </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'seller',
   data () {
     return {
+
     };
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="" scoped>
 
 </style>

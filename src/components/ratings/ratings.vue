@@ -1,19 +1,20 @@
 <template>
-  <div class="header">
-    我是header
+  <div class="">
+    i am ratings
   </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'ratings',
   data () {
     return {
+
     };
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="" scoped>
 
 </style>
